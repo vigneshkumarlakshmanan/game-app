@@ -1,4 +1,5 @@
-Flask==2.3.3
-Flask-Cors==3.0.10
-SQLAlchemy==2.1.0
-pymysql==1.0.3
+Flask==3.0.3
+Flask-Cors==4.0.1
+SQLAlchemy==2.0.44
+PyMySQL==1.1.1
+
