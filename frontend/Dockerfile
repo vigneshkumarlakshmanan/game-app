@@ -1,7 +1,10 @@
-FROM node:18 AS build
+FROM node:20 AS build
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package*.json ./
+
+RUN npm install -g npm@latest
+RUN npm install
+
 COPY public ./public
 COPY src ./src
 RUN npm run build
